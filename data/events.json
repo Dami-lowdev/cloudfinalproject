@@ -13,6 +13,14 @@
       "date": "2026-05-10",
       "location": "Nantes",
       "description": "48h pour construire une plateforme cloud complète."
+    },
+    {
+      "id": 3,
+      "title": "Atelier Kubernetes",
+      "date": "2026-06-20",
+      "location": "Rennes",
+      "description": "48h pour construire une plateforme cloud complète."
     }
+
   ]
 }
