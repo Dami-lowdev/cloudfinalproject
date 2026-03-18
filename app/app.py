@@ -100,7 +100,7 @@ def get_faq():
 @app.route("/healthz", methods=["GET"])
 def healthz():
     """Liveness probe — l'app tourne-t-elle ?"""
-    return jsonify({"status": "okTEST", "timestamp": datetime.utcnow().isoformat()}), 200
+    return jsonify({"status": "ok", "timestamp": datetime.utcnow().isoformat()}), 200
 
 
 @app.route("/readyz", methods=["GET"])
