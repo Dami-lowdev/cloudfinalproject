@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Conférence Cloud Native 2026",
+      "date": "2026-04-15",
+      "location": "Angers",
+      "description": "Présentation des dernières tendances cloud native."
+    },
+    {
+      "id": 2,
+      "title": "Hackathon DevOps",
+      "date": "2026-05-10",
+      "location": "Nantes",
+      "description": "48h pour construire une plateforme cloud complète."
+    }
+  ]
+}

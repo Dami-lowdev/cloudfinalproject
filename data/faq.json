@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "question": "Comment accéder à l'API ?",
+      "answer": "Les endpoints sont disponibles via GET sur /api/events, /api/news et /api/faq."
+    },
+    {
+      "id": 2,
+      "question": "Quelle est la fréquence de mise à jour du cache ?",
+      "answer": "Le cache mémoire est invalidé toutes les 60 secondes. Les données sont ensuite rechargées depuis Azure Blob Storage."
+    },
+    {
+      "id": 3,
+      "question": "Comment vérifier la disponibilité du service ?",
+      "answer": "Utilisez le endpoint /healthz pour la liveness probe et /readyz pour la readiness probe."
+    }
+  ]
+}

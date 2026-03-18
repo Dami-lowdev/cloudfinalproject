@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Lancement de la plateforme v1.0",
+      "date": "2026-03-18",
+      "author": "Équipe Digital Platforms",
+      "summary": "La plateforme de diffusion de contenu statique est désormais disponible."
+    },
+    {
+      "id": 2,
+      "title": "Mise à jour sécurité AKS",
+      "date": "2026-03-10",
+      "author": "Équipe Infra",
+      "summary": "Mise à jour des images Docker pour corriger des vulnérabilités."
+    }
+  ]
+}
