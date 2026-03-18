@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: content-platform
-          image: ghcr.io/Dami-lowdev/content-platform:latest
+          image: ghcr.io/dami-lowdev/content-platform:latest
           ports:
             - containerPort: 5000
           envFrom:

@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: content-platform-service
+  namespace: content-platform
+  labels:
+    app: content-platform
+spec:
+  type: ClusterIP
+  selector:
+    app: content-platform
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 5000
