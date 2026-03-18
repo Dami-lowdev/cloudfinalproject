@@ -15,6 +15,7 @@ venv/
 .venv/
 env/
 .env
+kube.txt
 
 # Variables d'environnement et secrets
 .env
