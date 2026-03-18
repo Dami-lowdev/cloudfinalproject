@@ -8,7 +8,8 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository_owner }}/content-platform
+  # IMAGE_NAME hardcode en minuscules pour eviter InvalidImageName sur GHCR 
+  IMAGE_NAME: dami-lowdev/content-platform
 
 jobs:
 
@@ -87,7 +88,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
 
   # ─────────────────────────────────────────────────────────────
-  # JOB 3 : Deploiement sur AKS via kubeconfig (sans Service Principal)
+  # JOB 3 : Deploiement sur AKS via kubeconfig
   # ─────────────────────────────────────────────────────────────
   deploy:
     name: Deploy sur AKS
@@ -119,7 +120,7 @@ jobs:
           kubectl apply -f k8s/service.yaml
           kubectl apply -f k8s/ingress.yaml
 
-      - name: Mettre a jour l'image
+      - name: Mettre a jour l'image en minuscules
         run: |
           kubectl set image deployment/content-platform \
             content-platform=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest \
@@ -128,7 +129,7 @@ jobs:
       - name: Attendre le rollout
         run: |
           kubectl rollout status deployment/content-platform \
-            -n content-platform --timeout=120s
+            -n content-platform --timeout=180s
 
       - name: Smoke test post-deploiement
         run: |
