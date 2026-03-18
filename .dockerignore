@@ -1,0 +1,34 @@
+# Environnement virtuel Python — jamais dans l'image
+venv/
+.venv/
+ 
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+ 
+# Tests — pas besoin en production
+app/tests/
+ 
+# Fichiers de développement
+.env
+.env.*
+*.env
+ 
+# Git
+.git/
+.gitignore
+ 
+# Kubernetes et CI — pas dans l'image applicative
+k8s/
+.github/
+ 
+# Documentation
+README.md
+data/
+ 
+# IDE
+.vscode/
+.idea/
