@@ -108,6 +108,17 @@ pytest tests/ -v
 
 Les tests utilisent des mocks — **aucune connexion Azure n'est requise** pour les exécuter.
 
+## Couverture des tests
+
+| Endpoint | Tests | Statut |
+|---|---|---|
+| `/healthz` | HTTP 200, JSON valide, champ status | OK |
+| `/readyz` | HTTP 200/503, champ reason | OK |
+| `/api/events` | HTTP 200, cle items, structure | OK |
+| `/api/news` | HTTP 200, cle items | OK |
+| `/api/faq` | HTTP 200, champs question/answer | OK |
+| Cache TTL | Un seul appel Blob par TTL | OK |
+
 ## Désactiver l'environnement virtuel
 
 ```bash
