@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: content-platform-config
+  namespace: content-platform
+data:
+  AZURE_CONTAINER_NAME: "content"
+  AZURE_STORAGE_ACCOUNT_NAME: "cpstoragecloudcomp"
+  CACHE_TTL: "60"
