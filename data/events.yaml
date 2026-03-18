@@ -1,0 +1,11 @@
+items:
+  - id: 3
+    title: "Workshop Kubernetes"
+    date: "2026-06-01"
+    location: "Angers"
+    description: "Formation pratique sur AKS et les manifests Kubernetes."
+  - id: 4
+    title: "Conference DevSecOps"
+    date: "2026-07-15"
+    location: "Nantes"
+    description: "Integration de la securite dans les pipelines CI/CD."
