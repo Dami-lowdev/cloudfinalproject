@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Environnements virtuels
+venv/
+.venv/
+env/
+.env
+
+# Variables d'environnement et secrets
+.env
+.env.*
+*.env
+secrets.yaml
+**/secrets/**
+
+# Azure
+.azure/
+azure.json
+
+# Docker
+.dockerignore
+
+# Tests & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.coveragerc
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+
+# Kubernetes secrets locaux
+kubeconfig
+*.kubeconfig
