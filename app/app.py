@@ -110,6 +110,14 @@ def readyz():
         return jsonify({"status": "not ready", "reason": "AZURE_STORAGE_CONNECTION_STRING manquante"}), 503
     return jsonify({"status": "ready", "timestamp": datetime.utcnow().isoformat()}), 200
 
+@app.route("/api/version", methods=["GET"])
+def get_version():
+    """Retourne la version et les metadonnees de l'application."""
+    return jsonify({
+        "version": "1.0.0",
+        "contributors": ["Dami-lowdev", "Reine Brenda Ankoume", "Corel Chouamou"],
+        "endpoints": ["/api/events", "/api/news", "/api/faq", "/healthz", "/readyz"]
+    }), 200
 
 # ---------------------------------------------------------------------------
 # Interface web minimale
